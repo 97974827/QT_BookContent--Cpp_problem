@@ -1,0 +1,717 @@
+# Cpp 문제 풀이
+========
+## 15문제
+------------
+
+>**1번.  Write a program in C++ to print a welcome text in a separate line.**
+	
+>><u>풀이과정</u>
+
+>>>1. #include <iostream> 헤더 파일을 추가한다.
+>>>2. using namespace std; 추가한다. -> iostream함수 편하게 사용하기위함 
+>>>3. int main문을 작성한다.
+>>>4. cout함수를 이용하여 print a welcome text in a separate line:을 입력한다.
+>>>5. 문장이 끝난후 한줄 띄우고 cout 함수 이용 : -----------------------라인 추가 
+>>>6. 문장이 끝난후 한줄 띄우고 cout 함수 이용 : Welcome to 문장이 끝나기전에 개행문자 \n을 넣어서 줄바꿈 해줌.
+>>>7. 문장이 끝난후 한줄 띄우고 cout 함수 이용 : w3resource.com을 입력 
+*** 
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Print a welcome text in a separate line :" << endl;
+    cout << "---------------------------------------------\n";
+    cout << "Welcome to" << endl;
+    cout << "w3resource.com" << endl;
+    return 0;
+}
+```
+*Result console*
+
+Print a welcome text in a separate line :
+---------------------------------------------
+Welcome to
+w3resource.com
+
+***
+>**2번. Write a program in C++ to print the sum of two numbers.**
+
+>> <u>풀이과정</u>
+
+>>>1. #include <iostream> 헤더 파일을 추가한다.
+>>>2. using namespace std; 추가한다. -> iostream함수 편하게 사용하기위함 
+>>>3. int main문을 작성한다.
+>>>4. cout함수를 이용하여 print the sum of two numbers:을 입력한다.
+>>>5. 문장이 끝난후 한줄 띄우고 ---------라인추가
+>>>7. 문장이 끝난 후 한줄 띄우고 The sum of 29 and 30 is : 29+30더한식을 결과 출력 
+
+***
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Print the sum of two numbers" << endl;
+    cout << "---------------------------------------------\n";
+    cout << "The sum of 29 and 30 is : "<< 29+30 << endl;
+    return 0;
+}
+```
+*Result console*
+
+Print the sum of two numbers
+---------------------------------------------
+The sum of 29 and 30 is : 59
+
+***
+>**3번. Write a program in C++ to find Size of fundamental data types.**
+
+>><u>풀이과정</u>
+
+>>>1. #include <iostream> 헤더 파일을 추가한다.
+>>>2. using namespace std; 추가한다. -> iostream함수 편하게 사용하기위함 
+>>>3. int main문을 작성한다.
+>>>4. cout함수를 이용하여 Find Size of fundamental data types:을 입력한다.
+>>>5. 문장이 끝난후 한줄 띄우고 ---------라인추가
+>>>6. 문장이 끝난후 한줄 띄우고 the sizeof(char)is : sizeof(char) bytes 출력
+>>>7. 문장이 끝난후 한줄 띄우고 the sizeof(short)is : sizeof(short) bytes 출력
+>>>8. 문장이 끝난후 한줄 띄우고 the sizeof(int)is : sizeof(int) bytes 출력
+>>>9. 문장이 끝난후 한줄 띄우고 the sizeof(long)is : sizeof(long) bytes 출력
+>>>10. 문장이 끝난후 한줄 띄우고 the sizeof(long long)is : sizeof(long long) bytes 출력
+>>>11. 문장이 끝난후 한줄 띄우고 the sizeof(float)is : sizeof(float) bytes 출력
+>>>12. 문장이 끝난후 한줄 띄우고 the sizeof(double)is : sizeof(double) bytes 출력
+>>>12. 문장이 끝난후 한줄 띄우고 the sizeof(long double)is : sizeof(long double) bytes 출력
+>>>12. 문장이 끝난후 한줄 띄우고 the sizeof(bool)is : sizeof(bool) bytes 출력
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Find Size of fundamental data types:" << endl;
+    cout << "---------------------------------------------\n";
+    cout << "sizeof(char) is        : "<< sizeof(char) << " bytes" << endl;
+    cout << "sizeof(short) is       : "<< sizeof(short) << " bytes" << endl;
+    cout << "sizeof(int) is         : "<< sizeof(int) << " bytes" << endl;
+    cout << "sizeof(long) is        : "<< sizeof(long) << " bytes" << endl;
+    cout << "sizeof(long long) is   : "<< sizeof(long long) << " bytes" << endl;
+    cout << "sizeof(float) is       : "<< sizeof(float) << " bytes" << endl;
+    cout << "sizeof(double) is      : "<< sizeof(double) << " bytes" << endl;
+    cout << "sizeof(long double) is : "<< sizeof(long double) << " bytes" << endl;
+    cout << "sizeof(bool) is        : "<< sizeof(bool) << " bytes" << endl;
+    return 0;
+}
+```
+*Result console*
+
+Find Size of fundamental data types:
+---------------------------------------------
+sizeof(char) is        : 1 bytes
+sizeof(short) is       : 2 bytes
+sizeof(int) is         : 4 bytes
+sizeof(long) is        : 4 bytes
+sizeof(long long) is   : 8 bytes
+sizeof(float) is       : 4 bytes
+sizeof(double) is      : 8 bytes
+sizeof(long double) is : 12 bytes
+sizeof(bool) is        : 1 bytes
+
+***
+
+**4번. Write a program in C++ to print the sum of two numbers using variables.**
+
+>><u>풀이과정</u>
+
+>>>1. #include <iostream> 헤더 파일을 추가한다.
+>>>2. using namespace std; 추가한다. -> iostream함수 편하게 사용하기위함 
+>>>3. int main문을 작성한다.
+>>>4. cout함수를 이용하여 Find Size of fundamental data types:을 입력한다.
+>>>5. 문장이 끝난후 한줄 띄우고 ---------라인추가
+>>>6. 문장이 끝난후 한줄 띄우고 int형 변수 num1은 29로 , num2은 30으로 각각 초기화 해준다.
+>>>7. 문장이 끝난후 한줄 띄우고 int형 변수 sum에 num1, num2을 더하는 식을 작성
+>>>8. 문장이 끝난후 한줄 띄우고 the sum of num1값출력 and num2값 출력 is: sum값 출력 한다.
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Print the sum of two numbers :" << endl;
+    cout << "---------------------------------------------\n";
+    int num1=29, num2=30;
+    int sum = num1 + num2;
+    cout << "The sum of " << num1 << " and " << num2 << "is : " << sum << endl;
+
+    return 0;
+}
+```
+*Result console*
+
+Print the sum of two numbers :
+---------------------------------------------
+The sum of 29 and 30is : 59
+***
+
+**5번. Write a program in C++ to check the upper and lower limits of integer.**
+
+>><u>풀이과정</u>
+>>>1. #include <iostream> 헤더 파일을 추가한다.
+>>>2. using namespace std; 추가한다. -> iostream함수 편하게 사용하기위함 
+>>>3. int main문을 작성한다.
+>>>4. cout함수를 이용하여 check the upper and lower limits of integer:을 입력한다.
+>>>5. 문장이 끝난후 한줄 띄우고 ---------라인추가
+>>>6. 문장이 끝난후 한줄 띄우고 The maximum limit of int data type : 2147483647출력
+>>>7. 문장이 끝난후 한줄 띄우고 The minimum limit of int data type :  -2147483648출력
+>>>8. 문장이 끝난후 한줄 띄우고 The maximum limit of unsigned int data type : 4294967295출력
+>>>9. 문장이 끝난후 한줄 띄우고 The maximum limit of long long data type : 9223372036854775807출력
+>>>10. 문장이 끝난후 한줄 띄우고 The minimum limit of long long data type :  -9223372036854775808출력
+>>>11. 문장이 끝난후 한줄 띄우고 The maximum limit of unsigned long long data type :18446744073709551615출력
+>>>12. 문장이 끝난후 한줄 띄우고 The Bits contain in char data type : 8출력
+>>>13. 문장이 끝난후 한줄 띄우고  " The maximum limit of char data type :  127출력            
+>>>14. 문장이 끝난후 한줄 띄우고  " The minimum limit of char data type :  -128출력    
+>>>15. 문장이 끝난후 한줄 띄우고  " The maximum limit of signed char data type :    127출력 
+>>>16. 문장이 끝난후 한줄 띄우고  " The minimum limit of signed char data type :     -128출력
+>>>17. 문장이 끝난후 한줄 띄우고  " The maximum limit of unsigned char data type :  255출력
+>>>18. 문장이 끝난후 한줄 띄우고  " The minimum limit of short data type :         -32768출력
+>>>19. 문장이 끝난후 한줄 띄우고  " The maximum limit of short data type :         32767출력
+>>>20. 문장이 끝난후 한줄 띄우고  " The maximum limit of unsigned short data type : 65535출력
+
+```cpp
+#include <iostream>
+#include <climits>   // integer limits in header file
+using namespace std;
+
+int main(){
+    cout << "Check the upper and lower limits of integer :" << endl;
+    cout << "--------------------------------------------------\n";
+    cout << " The maximum limit of int data type :                  " << INT_MAX << endl;
+    cout << " The minimum limit of int data type :                  " << INT_MIN << endl;
+    cout << " The maximum limit of unsigned int data type :         " << UINT_MAX << endl;
+    cout << " The maximum limit of long long data type :            " << LLONG_MAX << endl;
+    cout << " The minimum limit of long long data type :             " << LLONG_MIN << endl;
+    cout << " The maximum limit of unsigned long long data type :   " << ULLONG_MAX << endl;
+    cout << " The Bits contain in char data type :                  " << CHAR_BIT << endl;
+    cout << " The maximum limit of char data type :                 " << CHAR_MAX << endl;
+    cout << " The minimum limit of char data type :                 " << CHAR_MIN << endl;
+    cout << " The maximum limit of signed char data type :          " << SCHAR_MAX << endl;
+    cout << " The minimum limit of signed char data type :          " << SCHAR_MIN << endl;
+    cout << " The maximum limit of unsigned char data type :        " << UCHAR_MAX << endl;
+    cout << " The minimum limit of short data type :                " << SHRT_MIN << endl;
+    cout << " The maximum limit of short data type :                " << SHRT_MAX << endl;
+    cout << " The maximum limit of unsigned short data type :       " << USHRT_MAX << endl;
+
+    return 0;
+}
+```
+*Result console*
+
+Check the upper and lower limits of integer :
+--------------------------------------------------
+ The maximum limit of int data type :                  2147483647
+ The minimum limit of int data type :                  -2147483648
+ The maximum limit of unsigned int data type :         4294967295
+ The maximum limit of long long data type :            9223372036854775807
+ The minimum limit of long long data type :             -9223372036854775808
+ The maximum limit of unsigned long long data type :   18446744073709551615
+ The Bits contain in char data type :                  8
+ The maximum limit of char data type :                 127
+ The minimum limit of char data type :                 -128
+ The maximum limit of signed char data type :          127
+ The minimum limit of signed char data type :          -128
+ The maximum limit of unsigned char data type :        255
+ The minimum limit of short data type :                -32768
+ The maximum limit of short data type :                32767
+ The maximum limit of unsigned short data type :       65535
+
+
+**6번.  Write a program in C++ to check whether the primitive values crossing the limits or not**
+
+>><u>풀이과정</u>
+>>>1. #include <iostream> 헤더 파일을 추가한다.
+>>>2. using namespace std; 추가한다. -> iostream함수 편하게 사용하기위함 
+>>>3. int main문을 작성한다.
+>>>4. cout함수를 이용하여 check the upper and lower limits of integer:을 입력한다.
+>>>5. 문장이 끝난후 한줄 띄우고 ---------라인추가
+>>>6. char,bool,int,int,int,unsigned int, double, double, long, long 변수 값 초기화 선언(f,1,2009,1500000,79.48,4.69,12047235,995324987)
+>>>7. 각 변수별로 프린트 
+
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    char female = 'F';
+    bool st = true;
+    int number = 2;
+    int year = 2009;
+    int sal = 1500000;
+    double height = 79.48;
+    double gpa = 4.69;
+    long upto = 12047235;
+    long till = 995324987;
+    
+    cout << "The Gender is : " << female << endl;
+    cout << "Is she married? : " << st << endl;
+    cout << "Number of sons she has : " << number << endl;
+    cout << "Year of her appointment : " << year << endl;
+    cout << "Salary for a year : " << sal << endl;
+    cout << "Height is : " << height << endl;
+    cout << "GPA is : " << gpa << endl;
+    cout << "Salary drawn upto : " << upto << endl;
+    cout << "Balance till : " << till << endl;
+
+
+    return 0;
+}
+```
+*Result Console*
+The Gender is : F
+Is she married? : 1
+Number of sons she has : 2
+Year of her appointment : 2009
+Salary for a year : 1500000
+Height is : 79.48
+GPA is : 4.69
+Salary drawn upto : 12047235
+Balance till : 995324987
+
+***
+
+**7번. Write a program in C++ to display various type or arithmetic operation using mixed data type **
+
+>><u>풀이과정</u>
+>>>1. #include <iostream> 헤더 파일을 추가한다.
+>>>2. using namespace std; 추가한다. -> iostream함수 편하게 사용하기위함 
+>>>3. int main문을 작성한다.
+>>>4. 메인문안에 cout함수를 이용하여 Display arithmetic operations with mixed data type :을 입력한다.
+>>>5. 문장이 끝난후 한줄 띄우고 ---------라인추가
+>>>6. int형 변수 2개 각각 5, 7 초기화선언
+>>>7. double형 변수 2개 각각 3.7, 8.0 초기화선언
+>>>8. n1+n2 결과값 출력
+>>>8. d1+d2 결과값 출력
+>>>10. n1+d2 결과값 출력
+>>>11. n1-n2 결과값 출력
+>>>12. n1-d2 결과값 출력
+>>>13. n1*n2 결과값 출력
+>>>14. d1*d2 결과값 출력
+>>>15. n1*d2 결과값 출력
+>>>16. n1/n2 결과값 출력
+>>>16. d1/d2 결과값 출력
+>>>16. n1/d2 결과값 출력
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    cout << "Display arithmetic operations with mixed data type :\n";
+    cout << "---------------------------------------------------------\n";
+
+    int n1 = 5, n2 = 7;
+    double d1 = 3.7, d2 = 8.0;
+
+    cout << n1 << " + " << n2 << " = " << n1+n2 << endl;
+    cout << d1 << " + " << d2 << " = " << d1+d2 << endl;
+    cout << n1 << " + " << d2 << " = " << n1+d2 << endl;
+
+    cout << n1 << " - " << n2 << " = " << n1-n2 << endl;
+    cout << d1 << " - " << d2 << " = " << d1-d2 << endl;
+    cout << n1 << " - " << d2 << " = " << n1-d2 << endl;
+
+    cout << n1 << " * " << n2 << " = " << n1*n2 << endl;
+    cout << d1 << " * " << d2 << " = " << d1*d2 << endl;
+    cout << n1 << " * " << d2 << " = " << n1*d2 << endl;
+
+    cout << n1 << " / " << n2 << " = " << n1/n2 << endl;
+    cout << n1 << " / " << n2 << " = " << d1/d2 << endl;
+    cout << n1 << " / " << n2 << " = " << n1/d2 << endl;
+    return 0;
+}
+```
+
+*Result Console*
+Display arithmetic operations with mixed data type :
+---------------------------------------------------------
+5 + 7 = 12
+3.7 + 8 = 11.7
+5 + 8 = 13
+5 - 7 = -2
+3.7 - 8 = -4.3
+5 - 8 = -3
+5 * 7 = 35
+3.7 * 8 = 29.6
+5 * 8 = 40
+5 / 7 = 0
+5 / 7 = 0.4625
+5 / 7 = 0.625
+
+*** 
+**8번. Write a program in C++ to check overflow/underflow during various arithmetical operation**
+
+>><u>풀이과정</u>
+>>>1. #include <iostream> 헤더 파일을 추가한다.
+>>>2. using namespace std; 추가한다. -> iostream함수 편하게 사용하기위함 
+>>>3. int main문을 작성한다.
+>>>4. 메인문안에 cout함수를 이용하여 Check overflow/underflow during various arithmetical operation :을 입력한다.
+>>>4. 문장이 끝난후 한줄 띄우고 Range of int is [-2147483648, 2147483647]을 입력한다.
+>>>5. 문장이 끝난후 한줄 띄우고 ---------라인추가
+>>>6. 두정수 max, min 초기화 선언
+>>>7. 오버플로우 체크 +1, +2 결과수행후 max값 두개 곱 구하기
+>>>8. 언더플로우 체크 -1, -2 결과수행후 min값 두개 곱 구하기 
+
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    cout << "Check overflow/underflow during various arithmetical operation :\n";
+    cout << "Range of int is [-2147483648, 2147483647]\n";
+    cout << "---------------------------------------------------------\n";
+
+    int max = 2147483647, min = -2147483648;
+
+    cout << "Overflow the integer range and set in minimum range : " << max + 1<< endl;
+    cout << "Increasing from its minimum range : " << max + 2 << endl;
+    cout << "Product is : " << max * max << endl;
+    cout << "Underflow the range and set in maximum range : " << min - 1<< endl;
+    cout << "Decreasing from its maximum range : " << min - 2 << endl;
+    cout << "Product is : " << min * min << endl;
+
+    return 0;
+}
+```
+
+*Result Console*
+Check overflow/underflow during various arithmetical operation :
+Range of int is [-2147483648, 2147483647]
+---------------------------------------------------------
+Overflow the integer range and set in minimum range : -2147483648
+Increasing from its minimum range : -2147483647
+Product is : 1
+Underflow the range and set in maximum range : 2147483647
+Decreasing from its maximum range : 2147483646
+Product is : 0
+
+***
+
+**9번. Write a program in C++ to display the operation of pre and post increment and decrement.**
+
+>><u>풀이과정</u>
+>>>1. #include <iostream> 헤더 파일을 추가한다.
+>>>2. using namespace std; 추가한다. -> iostream함수 편하게 사용하기위함 
+>>>3. int main문을 작성한다.
+>>>4. 메인문안에 cout함수를 이용하여 Display the operation of pre and post increment and decrement :을 입력한다.
+>>>5. 문장이 끝난후 한줄 띄우고 ---------라인추가
+>>>6. number값 출력 
+>>>7. number증가 후 출력
+>>>8. number증가 후 출력
+>>>9. number감소 후 출력
+>>>10. number감소 후 출력
+
+
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    cout << "Display the operation of pre and post increment and decrement :\n";
+    cout << "---------------------------------------------------------\n";
+
+    int number = 57;
+    cout << "The number is : " << number << endl;
+    number++;
+    cout << "After post increment by 1 the number is : " << number << endl;
+    number++;
+    cout << "After pre increment by 1 the number is : " << number << endl;
+    number++;
+    cout << "After increasing by 1 the number is : " << number << endl;
+    number--;
+    cout << "After post decrement by 1 the number is : " << number << endl;
+    number--;
+    cout << "After pre decrement by 1 the number is : " << number << endl;
+    number--;
+    cout << "After decrasing by 1 the number is : " << number << endl;
+
+
+    return 0;
+}
+
+```
+
+*Result Console*
+Display the operation of pre and post increment and decrement :
+---------------------------------------------------------
+The number is : 57
+After post increment by 1 the number is : 58
+After pre increment by 1 the number is : 59
+After increasing by 1 the number is : 60
+After post decrement by 1 the number is : 59
+After pre decrement by 1 the number is : 58
+After decrasing by 1 the number is : 57
+
+***
+
+**10번, 11번은 이해가 안되서 놔뒀습니다 **
+
+
+***
+
+**12번. Write a program in C++ to add two numbers accept through keyboard**
+
+>><u>풀이과정</u>
+>>>1. #include <iostream> 헤더 파일을 추가한다.
+>>>2. using namespace std; 추가한다. -> iostream함수 편하게 사용하기위함 
+>>>3. int main문을 작성한다.
+>>>4. 메인문안에 cout함수를 이용하여 Original array:을 입력한다.
+>>>5. int형 배열 9개 초기화 10,20,30 순으로 초기화
+>>>6. 반복문으로 3자리만 출력 후 3번지부터 40,50,60,70,80,90 값 초기화 
+>>>7. 반복문으로 배열 전체 출력
+
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    cout << "Original array:\n";
+    int arr[9] = {10,20,30};
+
+    for(int i=0; i<3; i++){
+        cout << "arr[" << i << "] : " << arr[i] << endl;
+    }
+
+    arr[3]=40;
+    arr[4]=50;
+    arr[5]=60;
+    arr[6]=70;
+    arr[7]=80;
+    arr[8]=90;
+    cout << endl;
+    for(int i=0; i<9; i++){
+        cout << "arr[" << i << "] : " << arr[i] << endl;
+    }
+    return 0;
+}
+
+```
+
+*Result Console*
+Original array:
+arr[0] : 10
+arr[1] : 20
+arr[2] : 30
+
+arr[0] : 10
+arr[1] : 20
+arr[2] : 30
+arr[3] : 40
+arr[4] : 50
+arr[5] : 60
+arr[6] : 70
+arr[7] : 80
+arr[8] : 90
+
+***
+
+**13번. Write a program in C++ to swap two numbers**
+
+
+>><u>풀이과정</u>
+>>>1. #include <iostream> 헤더 파일을 추가한다.
+>>>2. using namespace std; 추가한다. -> iostream함수 편하게 사용하기위함 
+>>>3. int main문을 작성한다.
+>>>4. 메인문안에 cout함수를 이용하여 Swap two numbers :을 입력한다.
+>>>5. int n1, n2, 임시변수 각각 0으로 초기화 선언
+>>>6. 정수 n1, n2 하나씩 입력받음
+>>>7. 임시변수 temp에 n1값 대입
+>>>8. n1에 n2값 대입
+>>>9. n2에 임시변수값 대입
+>>>10. 결과 출력 
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    cout << "Swap tow numbers\n";
+    cout << "-----------------\n";
+    int n1=0, n2=0, temp=0;
+    
+    cout << "input 1st number : ";
+    cin >> n1;
+    cout << "input 2nd number : ";
+    cin >> n2;
+    
+    temp=n1;
+    n1=n2;
+    n2=temp;
+    
+    cout << "Swapping 1st : " << n1 << endl;
+    cout << "Swapping 2nd : " << n2 << endl;
+    return 0;
+}
+```
+
+*Result Console*
+Swap tow numbers
+-----------------
+input 1st number :29
+input 2nd number :35
+Swapping 1st : 35
+Swapping 2nd : 29
+
+
+*** 
+
+**14번. Write a program in C++ to calculate the volume of a sphere**
+
+>><u>풀이과정</u>
+>>>1. #include <iostream> 헤더 파일을 추가한다.
+>>>2. using namespace std; 추가한다. -> iostream함수 편하게 사용하기위함 
+>>>3. int main문을 작성한다.
+>>>4. 메인문안에 cout함수를 이용하여 Calculate the volume of a sphere :을 입력한다.
+>>>5. int반지름변수, double 부피 변수 초기화 
+>>>6. 반지름 입력받아서 구의 부피 계산식을 sphere에 넣어줌(구의 부피 계산 하는 법 찾아봄)
+>>>7. 부피 출력 
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    cout << "Calculate the volume of a sphere :\n";
+    cout << "-----------------\n";
+
+    int radiux = 0;
+    double sphere = 0.0;
+
+    cout << "radiux : ";
+    cin >> radiux;
+    //sphere = radiux * radiux * 3.14;
+    sphere = 4 * 3.14 * (radiux * radiux * radiux) / 3;
+    cout << "sphere : " << sphere << endl;
+
+    return 0;
+}
+
+```
+*result console*
+Calculate the volume of a sphere :
+-----------------
+radiux :6
+sphere : 904.32
+
+***
+
+**15번. Write a program in C++ to calculate the volume of a cube**
+
+>><u>풀이과정</u>
+>>>1. #include <iostream> 헤더 파일을 추가한다.
+>>>2. using namespace std; 추가한다. -> iostream함수 편하게 사용하기위함 
+>>>3. int main문을 작성한다.
+>>>4. 메인문안에 cout함수를 이용하여 Calculate the volume of a sphere :을 입력한다.
+>>>5. 부피변수, 길이변수 하나씩 0초기화 선언
+>>>6. 길이변수 입력 받음
+>>>7. 길이 세제곱을 부피변수에 대입
+>>>8. 부피 변수 출력 
+
+```cpp
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    cout << "Calculate the volume of a cube :\n";
+    cout << "-----------------\n";
+
+    int weight = 0, volume=0;
+
+    cout << "input the side of a cube : ";
+    cin >> weight;
+
+    volume = weight*weight*weight;
+    cout << "volume output : " << volume << endl;
+    
+    return 0;
+}
+
+```
+
+*result console*
+
+Calculate the volume of a cube :
+-----------------
+input the side of a cube :5
+volume output : 125
+
+
+***
+
+**16번. Write a program in C++ to calculate the volume of a cylinder.**
+
+
+>><u>풀이과정</u>
+>>>1. #include <iostream> 헤더 파일을 추가한다.
+>>>2. using namespace std; 추가한다. -> iostream함수 편하게 사용하기위함 
+>>>3. int main문을 작성한다.
+>>>4. 메인문안에 cout함수를 이용하여 Calculate the volume of a sphere :을 입력한다.
+>>>5. int 반지름변수, 높이변수 하나씩 0초기화 선언
+>>>6. double 부피변수 초기화 0선언
+>>>7. 반지름, 높이 각각 입력 받음
+>>>8. 부피변수에 실린더 부피 공식 대입
+>>>9. 부피변수 출력 
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main(){
+
+    cout << "Calculate the volume of a cylinder :n";
+    cout << "-----------------\n";
+
+    int radius = 0, height = 0; // 반지름, 높이
+    double volume = 0.0; //  부피
+
+    cout << "input radius : ";
+    cin >> radius;
+    cout << "input height : ";
+    cin >> height;
+
+    volume = 3.14*(radius*radius) * height;
+
+    cout << "output volume : " << volume << endl;
+    return 0;
+}
+```
+
+*result console*
+
+Calculate the volume of a cylinder :n-----------------
+input radius :6
+input height :8
+output volume : 904.32
+
+
+***
+
+
