@@ -1,0 +1,208 @@
+82105@HYUN-JIN MINGW64 ~
+$ ls
+'20.02.27_Qt_Programming_[Korean_Edition_v1.4].pdf'
+'3D Objects'/
+ AppData/
+'Application Data'@
+'C Projects'/
+ CLionProjects/
+ CodeProjects/
+ Contacts/
+ Cookies@
+ cpp
+ C언어.zip
+ Desktop/
+'dev c++ Projects'/
+ Documents/
+ Downloads/
+ eclipse/
+ eclipse-workspace/
+ Favorites/
+'FLASHER 프로그램 방법'/
+ GS포스/
+ Links/
+'Local Settings'@
+ MicrosoftEdgeBackups/
+ Music/
+'My Documents'@
+ NaverCloud/
+ NetHood@
+ NEW_DC/
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TM.blf
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{fd9a35db-49fe-11e9-aa2c-248a07783950}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+'OneDrive - 호남대학교'/
+ Pictures/
+ PrintHood@
+ PycharmProjects/
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+ source/
+ Templates@
+ Videos/
+'visual stdio'/
+ 개발도구모음/
+ 개발방법론.txt
+ 공통유틸/
+ 데이터수집장치/
+'시작 메뉴'@
+ 언어패키징/
+ 자료구조.zip
+ 터치충전기/
+
+82105@HYUN-JIN MINGW64 ~
+$ pwd
+/c/Users/82105
+
+82105@HYUN-JIN MINGW64 ~
+$ sudo mkdir Qt_book_content
+bash: sudo: command not found
+
+82105@HYUN-JIN MINGW64 ~
+$ mkdir Qt_book_content
+
+82105@HYUN-JIN MINGW64 ~
+$ mkdir Cpp_problem
+
+82105@HYUN-JIN MINGW64 ~
+$ mkdir qt/cpp
+mkdir: cannot create directory ‘qt/cpp’: No such file or directory
+
+82105@HYUN-JIN MINGW64 ~
+$ mkdir QT_Cpp
+
+82105@HYUN-JIN MINGW64 ~
+$ cd QT_cpp
+
+82105@HYUN-JIN MINGW64 ~/QT_cpp
+$ ls
+
+82105@HYUN-JIN MINGW64 ~/QT_cpp
+$ cd ..
+
+82105@HYUN-JIN MINGW64 ~
+$ cp Qt_book_content Cpp_problem/ c/Users/82105/QT_cpp
+cp: target 'c/Users/82105/QT_cpp' is not a directory
+
+82105@HYUN-JIN MINGW64 ~
+$ cp Qt_book_content Cpp_problem/ QT_cpp
+cp: -r not specified; omitting directory 'Qt_book_content'
+cp: -r not specified; omitting directory 'Cpp_problem/'
+
+82105@HYUN-JIN MINGW64 ~
+$ cp -r Qt_book_content Cpp_problem/ QT_cpp
+
+82105@HYUN-JIN MINGW64 ~
+$ pwd
+/c/Users/82105
+
+82105@HYUN-JIN MINGW64 ~
+$ cd QT_Cpp/
+
+82105@HYUN-JIN MINGW64 ~/QT_Cpp
+$ ls
+Cpp_problem/  Qt_book_content/
+
+82105@HYUN-JIN MINGW64 ~/QT_Cpp
+$ git init
+Initialized empty Git repository in C:/Users/82105/QT_Cpp/.git/
+
+82105@HYUN-JIN MINGW64 ~/QT_Cpp (master)
+$ git add *
+
+82105@HYUN-JIN MINGW64 ~/QT_Cpp (master)
+$ git commit -m "First Commit"
+[master (root-commit) b761777] First Commit
+ 4 files changed, 1453 insertions(+)
+ create mode 100644 "Cpp_problem/\353\254\270\354\240\234\355\222\200\354\235\264\352\263\274\354\240\225.md"
+ create mode 100644 "Cpp_problem/\353\254\270\354\240\234\355\222\200\354\235\264\352\263\274\354\240\225.md.bak"
+ create mode 100644 "Cpp_problem/\353\263\200\354\210\230 \353\252\205\354\204\270\355\221\234.hwp"
+ create mode 100644 "Cpp_problem/\354\203\210\353\241\234\354\225\214\352\262\214\353\220\234 \352\262\203\353\223\244.md"
+
+82105@HYUN-JIN MINGW64 ~/QT_Cpp (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+82105@HYUN-JIN MINGW64 ~/QT_Cpp (master)
+$ git log
+commit b761777f59d76d33424185029fd18f60f0dfbbfc (HEAD -> master)
+Author: 97974827 <55374340+97974827@users.noreply.github.com>
+Date:   Tue Mar 24 14:33:45 2020 +0900
+
+    First Commit
+
+82105@HYUN-JIN MINGW64 ~/QT_Cpp (master)
+$ git push remote add origin https://github.com/97974827/QT_BookContent--Cpp_problem.git
+fatal: invalid refspec 'https://github.com/97974827/QT_BookContent--Cpp_problem.git'
+
+82105@HYUN-JIN MINGW64 ~/QT_Cpp (master)
+$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+82105@HYUN-JIN MINGW64 ~/QT_Cpp (master)
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+82105@HYUN-JIN MINGW64 ~/QT_Cpp (master)
+$ git push master
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream master master
+
+
+82105@HYUN-JIN MINGW64 ~/QT_Cpp (master)
+$ git pus
+git: 'pus' is not a git command. See 'git --help'.
+
+The most similar commands are
+        push
+        pull
+
+82105@HYUN-JIN MINGW64 ~/QT_Cpp (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+82105@HYUN-JIN MINGW64 ~/QT_Cpp (master)
+$ git remote add origin https://github.com/97974827/QT_BookContent--Cpp_problem.git
+
+82105@HYUN-JIN MINGW64 ~/QT_Cpp (master)
+$ git remote add master https://github.com/97974827/QT_BookContent--Cpp_problem.git
+
+82105@HYUN-JIN MINGW64 ~/QT_Cpp (master)
+$ git push -u origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 14.16 KiB | 4.72 MiB/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/97974827/QT_BookContent--Cpp_problem.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
