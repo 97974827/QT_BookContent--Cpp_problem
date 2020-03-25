@@ -1,8 +1,0 @@
-3-24 화 
-1. 마크다운 검색
-https://eungbean.github.io/2018/06/11/How-to-use-markdown/
-https://gist.github.com/ihoneymon/652be052a0727ad59601
-
-2. git bash 사용 
-3. cpp 문제풀이 (1~16)
-4. QT 환경 구축 
