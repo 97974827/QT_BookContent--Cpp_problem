@@ -10,13 +10,17 @@ _콘솔기반 Hello World - page 20_
 
 **source code**
 
-![image-20200325153750204](C:\Users\82105\AppData\Roaming\Typora\typora-user-images\image-20200325153750204.png)
+<img src="./console main.png">
+
+
 
 ***
 
 **result**
 
-![image-20200325153854673](C:\Users\82105\AppData\Roaming\Typora\typora-user-images\image-20200325153854673.png)
+<img src="./console.png">
+
+
 
 
 
@@ -24,7 +28,7 @@ _콘솔기반 Hello World - page 20_
 
 _.pro파일 - page 23_
 
-![image-20200325160139479](C:\Users\82105\AppData\Roaming\Typora\typora-user-images\image-20200325160139479.png)
+<img src="pro파일.png">
 
 
 
@@ -36,19 +40,21 @@ _GUI 기반 hello world - page 29_
 
 widget.h
 
-![image-20200325173951485](C:\Users\82105\AppData\Roaming\Typora\typora-user-images\image-20200325173951485.png)
+<img src="widget_h.png">
 
 ***
 
 widget.cpp
 
-![image-20200325174014253](C:\Users\82105\AppData\Roaming\Typora\typora-user-images\image-20200325174014253.png)
+<img src="widget_cpp.png">
+
+
 
 ***
 
 main.cpp
 
-![image-20200325174030739](C:\Users\82105\AppData\Roaming\Typora\typora-user-images\image-20200325174030739.png)
+<img src="main_cpp.png">
 
 ***
 
