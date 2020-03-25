@@ -10,7 +10,7 @@ _콘솔기반 Hello World - page 20_
 
 **source code**
 
-<img src="./console main.png">
+<img src="./console main.PNG">
 
 
 
@@ -18,7 +18,7 @@ _콘솔기반 Hello World - page 20_
 
 **result**
 
-<img src="./console.png">
+<img src="./console.PNG">
 
 
 
@@ -28,7 +28,7 @@ _콘솔기반 Hello World - page 20_
 
 _.pro파일 - page 23_
 
-<img src="pro파일.png">
+<img src="pro파일.PNG">
 
 
 
@@ -40,13 +40,13 @@ _GUI 기반 hello world - page 29_
 
 widget.h
 
-<img src="widget_h.png">
+<img src="widget_h.PNG">
 
 ***
 
 widget.cpp
 
-<img src="widget_cpp.png">
+<img src="widget_cpp.PNG">
 
 
 
@@ -54,7 +54,7 @@ widget.cpp
 
 main.cpp
 
-<img src="main_cpp.png">
+<img src="main_cpp.PNG">
 
 ***
 
