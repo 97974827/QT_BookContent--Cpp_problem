@@ -6,7 +6,7 @@
 - Ex ) 
   - 어떤 버튼을 클릭하면 호출되는 Slot 함수내에 update() 멤버 함수를 사용하면 paintEvent() virtual 함수가 호출된다.
 - resizeEvent() virtual 함수를 제공한다. 
-- virtual 함수는 QWidget의 크기가 변경되면 호출된다.
+- ```virtual 함수는 QWidget의 크기가 변경되면 호출```된다.
 - QWidget 영역 내에 마우스 이벤트를 처리, 키보드 이벤트, 위젯의 영역에 활성화가 Focus 되어 있는지 등의 다양한 virtual 함수를 제공한다.
 
 
@@ -61,12 +61,12 @@ Widget::Widget(QWidget *parent)
     : QWidget(parent)
 {
     edit = new QLineEdit("", this);
-    edit->setGeometry(120, 20, 100, 30);
+    edit->setGeometry(120, 20, 100, 30); // xpos, ypos, width, height
 }
 
 void Widget::paintEvent(QPaintEvent *event)
 {
-    Q_UNUSED(event);
+    Q_UNUSED(event); // 에러는 아니지만 신경쓰이는 경우 Q_UNUSED() 매크로를 써서 경고를 발생시키지 않도록 처리
     QString img_full_name;
 
     QPainter painter(this);
@@ -74,8 +74,10 @@ void Widget::paintEvent(QPaintEvent *event)
     img_full_name = QString(":resources/browser.png");
 
     QImage image(img_full_name);
-    painter.drawPixmap(0, 0, QPixmap::fromImage(image.scaled(100, 100, Qt::IgnoreAspectRatio, Qt::SmoothTransformation)));
-
+    painter.drawPixmap(50, 20, QPixmap::fromImage(image.scaled(50, 50, Qt::IgnoreAspectRatio, Qt::SmoothTransformation)));
+    // QPainter.drawPixmap(xpos, ypos, QPixmap::fromImage()) :
+    // QImage.scaled(xpos, ypos, ) : 그림파일의 크기를 바꿔주는 역할
+    // IgnoreAspectRatio : 그림 비율 무시
     painter.end();
 }
 
@@ -156,19 +158,6 @@ Widget::~Widget()
 {
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ```
 
